@@ -7,14 +7,14 @@
 #
 # contributed by 
 #
-# brand:                       onkyo2
-# model no. of remote control: 
-# devices being controlled by this remote:
+# brand:                      ONKYO 
+# model no. of remote control: RC-810M
+# devices being controlled by this remote: ONKYO AV Reciever
 #
 
 begin remote
 
-  name  onkyo2
+  name  onkyo-rc-810m
   bits           24
   flags SPACE_ENC|CONST_LENGTH
   eps            30
@@ -24,14 +24,14 @@ begin remote
   one           611  1615
   zero          611   516
   ptrail        615
-  repeat       8993  2219
+  repeat       0 0
   pre_data_bits   8
   pre_data       0x4B
-  gap          107413
+  gap         107000 
   toggle_bit_mask 0x0
 
       begin codes
-          KEY_ENTER                0xB6E916
+          KEY_OK                   0xB6E916
           KEY_LEFT                 0xB621DE
           KEY_RIGHT                0xB6A15E
           KEY_DOWN                 0xB6C13E
@@ -66,6 +66,9 @@ begin remote
           KEY_MENU                 0x35E11E
           KEY_EPG                  0x3611EE
           KEY_SETUP                0x36CA35
+
+          KEY_PAGEUP               0xB600FF
+          KEY_PAGEDOWN             0xB6807F
       end codes
 
 end remote
